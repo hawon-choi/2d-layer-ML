@@ -39,25 +39,27 @@ conda activate 2d-layer-classification
 ---
 
 ## 📂 Directory Structure
+
 ├── env.yaml
 ├── data_preprocess/
 │   ├── 1_pixel.py
 │   ├── 2_dist.py
 │   ├── 3_merge.py
 │   └── data/
-│       ├── images/ # Raw optical images
+│       ├── images/                     # Raw optical images
 │       └── json/
-│           ├── Graphene.json # Annotated regions
-│           ├── Graphene_pixel.json # Extracted pixel RGB/YIQ values
-│           ├── Graphene_dist.json # RGB & YIQ Color distance per flake
-│           └── Graphene_merge.json # Final merged dataset
-└──  AI/
+│           ├── Graphene.json          # Annotated regions
+│           ├── Graphene_pixel.json    # Extracted pixel RGB/YIQ values
+│           ├── Graphene_dist.json     # RGB & YIQ color distance per flake
+│           └── Graphene_merge.json    # Final merged dataset
+└── AI/
     ├── ml.ipynb
-    └── results/ 
-        ├── RGB_DIST.csv # model performance
-        └── RGB_DIST.png # confusion matrix 
-        ├── YIQ_DIST.csv 
-        └── YIQ_DIST.png 
+    └── results/
+        ├── RGB_DIST.csv               # Model performance
+        ├── RGB_DIST.png               # Confusion matrix
+        ├── YIQ_DIST.csv
+        └── YIQ_DIST.png
+
 ---
 
 
