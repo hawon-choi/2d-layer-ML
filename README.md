@@ -16,25 +16,25 @@ conda activate 2d-layer-classification
 
 ## 🔁 Pipeline Overview
 
-1. **`1_pixel.py`**
-   - input: data_preprocess/data/json/Graphene.json & data/images/
-   - output: data_preprocess/data/json/Graphene_pixel.json) 
-   Extracts pixel values near the flake/substrate boundary and converts them to RGB and YIQ color space.
+1. **`1_pixel.py`**  
+   - input: data_preprocess/data/json/Graphene.json & data/images/  
+   - output: .../Graphene_pixel.json  
+   Extracts pixel values near the flake/substrate boundary and converts them to RGB and YIQ color space.  
 
-2. **`2_dist.py`**
-   - input: data_preprocess/data/json/Graphene_pixel.json
-   - output: ../Graphene_dist.json
-   Computes pixel-wise color differences (flake ↔ nearest substrate) in both RGB and YIQ channels.
+2. **`2_dist.py`**  
+   - input: data_preprocess/data/json/Graphene_pixel.json  
+   - output: ../Graphene_dist.json  
+   Computes pixel-wise color differences (flake ↔ nearest substrate) in both RGB and YIQ channels.  
 
-3. **`3_merge.py`**
-   - input: data_preprocess/data/json/Graphene_dist.json
-   - output: ../Graphene_merge.json 
-   Aggregates all color distance data by layer type into a clean JSON dataset for model training.
+3. **`3_merge.py`**  
+   - input: data_preprocess/data/json/Graphene_dist.json  
+   - output: ../Graphene_merge.json  
+   Aggregates all color distance data by layer type into a clean JSON dataset for model training.  
 
-4. **`ml.ipynb`**
-   - input: data_preprocess/data/json/Graphene_merge.json 
-   - output: AI/results/xxx.csv & .png
-   Trains and evaluates machine learning models (SVM, KNN, Decision Tree) using 5-fold cross-validation and test data. Saves evaluation metrics and confusion matrix plots.
+4. **`ml.ipynb`**  
+   - input: data_preprocess/data/json/Graphene_merge.json  
+   - output: AI/results/xxx.csv & .png  
+   Trains and evaluates machine learning models (SVM, KNN, Decision Tree) using 5-fold cross-validation and test data. Saves evaluation metrics and confusion matrix plots.  
 
 ---
 
