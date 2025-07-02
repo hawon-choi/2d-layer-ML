@@ -39,7 +39,7 @@ conda activate 2d-layer-classification
 ---
 
 ## 📂 Directory Structure
-
+```
 ├── env.yaml
 ├── data_preprocess/
 │   ├── 1_pixel.py
@@ -59,7 +59,7 @@ conda activate 2d-layer-classification
         ├── RGB_DIST.png               # Confusion matrix
         ├── YIQ_DIST.csv
         └── YIQ_DIST.png
-
+```
 ---
 
 
