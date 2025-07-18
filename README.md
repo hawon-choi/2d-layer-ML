@@ -3,6 +3,8 @@
 This repository contains the codes used for preprocessing data and training machine learning models to classify the number of layers in 2D materials from optical microscope images.
 The pipeline extracts color-based features (RGB & YIQ distance) from annotated flake regions and uses them to train classifiers that distinguish between different flake thicknesses.
 
+The project was published in ACS Applied Nano Materials under the title "Data-Efficient Machine Learning for Layer Number Identification of 2D Materials Using Color Difference Analysis".
+https://pubs.acs.org/doi/pdf/10.1021/acsanm.5c02592
 
 ## 🛠️ Installation
 
